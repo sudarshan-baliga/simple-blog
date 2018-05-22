@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
+
 import Nav from './containers/nav';
+import Signin from './containers/signin'
 class App extends Component {
   render() {
     return (
-      <div>
-        <Nav />
-        <div className="App">
-          redux and react
+      <Router>
+        <div>
+          <Nav />
+          <div className="App">
+            <Route exact  path = '/signin' component = {Signin} />
+            <Route path='/signup'component = {Signin} />
+           </div>  
         </div>
-      </div>
+      </Router>
     );
   }
 }

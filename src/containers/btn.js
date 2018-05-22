@@ -13,6 +13,7 @@ import './btn.css';
         circle.classList.add('ripple');
         e.target.appendChild(circle);
     }
+    
     render(){
         return(
             <button  onClick = {this.createRipple} style = {this.props} className ="btn">
