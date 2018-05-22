@@ -9,7 +9,7 @@
     width: 30%;
     height: 450px;
     margin: 100px auto;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
 /* .signinContainer:before, .signinContainer:after{

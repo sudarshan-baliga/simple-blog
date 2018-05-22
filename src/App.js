@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="App">
           <Nav />
-          <div className="App">
+          <div >
             <Route exact  path = '/signin' component = {Signin} />
             <Route path='/signup'component = {Signin} />
            </div>  
