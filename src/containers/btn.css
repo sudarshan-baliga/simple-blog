@@ -1,0 +1,37 @@
+
+.btn{
+    border: none;
+    color: #fff;
+    margin: 6px;
+    padding: 10px 30px;
+    outline: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto';
+    overflow: hidden;
+    position: relative;
+    background-color: grey;
+    max-height: 35px;
+    max-width: 120px; 
+    display: inline-block;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+button .ripple{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transform : scale(0);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple{
+    100%{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
