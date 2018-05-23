@@ -1,8 +1,5 @@
 
 .signinContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-family: 'Ubuntu';
     color:grey;
@@ -12,24 +9,36 @@
     background-color: white;
 }
 
-/* .signinContainer:before, .signinContainer:after{
+ .signinContainer:before{
     content: '';
     background-color: #2196F3;
     width: 100%;
-    height: 20px;
-} */
+    height: 50px;
+    position: relative;
+    top: -40px;
+} 
 
 .signinContainer h1{
     padding: 5%;
 }
 
+
 .signinContainer input{
     width: 60%;
-    border: 2px solid #ddd;
+    border:0;
+    border-bottom: 2px solid #2196F3;
+    border-left: 5px solid #2196F3;
     padding: 6px;
     margin-bottom: 10px;
-    background-color: #ddd;
     outline: none;
+    transition: all 0.3s;
+}
+
+.signinContainer input:focus{
+    width:57%;
+    border-left: 15px solid #2196F3;
+    transition: all 0.3s;   
+    background-color: #ddd;
 }
 
 .material-icons{
@@ -45,5 +54,8 @@
     }
     .signinContainer input{
         width: 70%;
+    }
+    .signinContainer input:focus{
+        width:67%;
     }
 }

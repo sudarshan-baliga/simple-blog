@@ -10,7 +10,7 @@ export default class signin extends Component{
         var color = name === "in" ? "#4CAF50" : "#9C27B0";
         return(
             <div>
-                <div className = "signinContainer">
+                <div className = "signinContainer flexCenter boxShadow">
                     <i className="material-icons face"  style = 
                     {{color:color}}> account_circle </i>
                     <input type="text" name="name" placeholder = "User name"  />
