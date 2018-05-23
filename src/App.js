@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+import {connect} from 'react-redux';
 
 import Nav from './containers/nav';
 import Signin from './containers/signin'
@@ -22,5 +23,8 @@ class App extends Component {
     );
   }
 }
+function mapStateToProps({login}){
+  return {login};
+}
 
-export default App;
+export default connect(mapStateToProps)(App);

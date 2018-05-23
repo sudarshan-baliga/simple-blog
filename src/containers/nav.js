@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 export default class Nav extends Component{
     render(){
         return(
-        <nav class = "flexCenter boxShadow">
+        <nav className = "flexCenter boxShadow">
             <div className="navHead">
                 <h1>Blog</h1>
             </div>

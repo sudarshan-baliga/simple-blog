@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './btn.css';
 
  class Button extends Component{
-    createRipple (e){ 
+    createRipple (e, previousprops){ 
+        if(previousprops.onClick){
+           previousprops.onClick();
+        }
         var circle = document.createElement('div');
         var d = e.target.clientWidth; 
         circle.style.width = e.target.style.height = d + 'px';
@@ -16,7 +19,7 @@ import './btn.css';
     
     render(){
         return(
-            <button  onClick = {this.createRipple} style = {this.props} className ="btn">
+            <button  onClick = {(e, props)=>{this.createRipple( e, this.props) } } style = {this.props} className ="btn">
                  {this.props.children}
             </button>
         )
