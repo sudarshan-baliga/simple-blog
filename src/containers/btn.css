@@ -13,6 +13,7 @@
     max-height: 35px;
     max-width: 120px; 
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn:hover{

@@ -1,0 +1,97 @@
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profileContainer{
+    background-color: #fff;
+    width: 30%;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 50px;
+    height: 400px; 
+    display: inline-block;
+}
+
+.profilePic{
+    top:-60px;
+}
+
+.profilePic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.userContent{
+    width: 90%;
+    top: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    color:rgba(0,0,0,.54);
+}
+
+.userName, .userDetails{
+    margin: 10px;
+}
+
+.userName, .postTitle{
+    color: #000;
+    text-transform: capitalize;
+}
+
+.number{
+ color:#4CAF50;
+}
+
+.posts{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.postHead{
+    text-align:center;
+    color: #018f69;
+}
+
+.posts li{
+    list-style: none;
+    background: #fff;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    font-size: 20px;        
+    border:0;
+    max-width: 500px;
+    max-height: 60px;
+    overflow: hidden;
+    color:rgba(0,0,0,.54);
+    cursor: pointer;
+    transition:all 0.3s;
+}
+
+.posts li:hover{
+    transform:scale(1.2);
+}
+@media only screen and (max-width: 1000px) {
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profileContainer{
+        width:80%;
+        height: 450px;
+    }
+    .posts{
+        width:80%;
+    }
+    .userContent{
+        font-size: 20px;
+    }
+    .userContent{
+        top: 80px;
+    }
+}

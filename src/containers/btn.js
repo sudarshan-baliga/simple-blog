@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './btn.css';
 
  class Button extends Component{
-    createRipple (e, previousprops){ 
+    createRipple (e, previousprops){
+        //call the child component onClick 
         if(previousprops.onClick){
            previousprops.onClick();
         }

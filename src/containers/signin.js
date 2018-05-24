@@ -26,13 +26,13 @@ class signin extends Component{
         if(type === 'in'){
             this.props.Login(this.state);
         }
-        console.log('type  fff', type);
     }
     render(){
         //using same component for signup
-        var name = this.props.location.pathname.slice(5,);
+        var name = window.location.pathname.slice(5,);
         var color = name === "in" ? "#4CAF50" : "#9C27B0";
         return(
+
             <div>
                 <div className = "signinContainer flexCenter boxShadow">
                     <i className="material-icons face"  style = 
@@ -53,4 +53,4 @@ function mapDispatchToProps(dispatch){
     return bindActionCreators( {Login}, dispatch);
 }
 
-export default connect(null,mapDispatchToProps)(signin);
+export default connect(null, mapDispatchToProps)(signin);
