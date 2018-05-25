@@ -30,7 +30,7 @@ class signin extends Component{
     render(){
         //using same component for signup
         var name = window.location.pathname.slice(5,);
-        var color = name === "in" ? "#4CAF50" : "#9C27B0";
+        var color = name === "in" ? "#4CAF50" : "#00aced";
         return(
 
             <div>
@@ -39,9 +39,9 @@ class signin extends Component{
                     {{color:color}}> account_circle </i>
                     <input onChange = {this.nameChange} type="text" name="name" placeholder = "User name"  />
                     <input onChange = {this.passwordChange} type="password" name="password" placeholder = "Password" />
-                    <Button onClick = {()=>{this.clickHandler(name) }} backgroundColor = {color}>
+                    <Button onClick = {()=>{this.clickHandler(name) }} className = {"sign"+name+"Btn"}>
                      Sign {name} </Button>
-                    {name === "in" ?  <Link to = "signup"> <Button backgroundColor = "#9C27B0">
+                    {name === "in" ?  <Link to = "signup"> <Button className = "signupBtn">
                     Sign up</Button> </Link> : ""}
                 </div>
             </div>  

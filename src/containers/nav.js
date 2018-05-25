@@ -12,12 +12,12 @@ export default class Nav extends Component{
             </div>
                 {this.props.login ==="NO" ?
                     <div className="buttons">
-                        <Link to = "signin"> <Button backgroundColor = "#4CAF50">Sign in</Button> </Link>
-                        <Link to = "signup"> <Button backgroundColor = "#9C27B0"> Sign up</Button> </Link>
+                        <Link to = "signin"> <Button className = "signinBtn" >Sign in</Button> </Link>
+                        <Link to = "signup"> <Button className = "signupBtn"> Sign up</Button> </Link>
                     </div>
                         :
                      <div className="buttons">
-                         <Button backgroundColor = "#f44336">Log out</Button>
+                         <Button className = "logoutBtn" >Log out</Button>
                     </div>
                 }
         </nav>

@@ -20,7 +20,7 @@ import './btn.css';
     
     render(){
         return(
-            <button  onClick = {(e, props)=>{this.createRipple( e, this.props) } } style = {this.props} className ="btn">
+            <button  onClick = {(e, props)=>{this.createRipple( e, this.props) } } className = {"btn " + this.props.className}>
                  {this.props.children}
             </button>
         )

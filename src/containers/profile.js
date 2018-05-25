@@ -24,7 +24,7 @@ var Post = (post, index)=>{
                     <img src="http://www.mediamanint.com/profiles/superman2.jpg" alt=""/>   
                     </div>
                     <div className="userContent center ">
-                        <h2 className = "userName"> {this.props.name}</h2>
+                        <h1 className = "userName"> {this.props.name}</h1>
                         <h3 className = "userDetails">{this.props.details}</h3>
                         <h3 className = "userGang">Fllowers: <span className = "number"> {this.props.followers} </span>
                             Fllowing: <span className = "number"> {this.props.following} </span>
@@ -32,11 +32,13 @@ var Post = (post, index)=>{
                     </div>
                 </div>
                { this.props.posts.length > 0 ? 
-                    (<div className="posts">
-                        <h2  className = "postHead" >Posts by {this.props.name}</h2>
-                            {  this.props.posts.map(Post)} : 
+                    (
+                        <div className="posts">
+                            <h2  className = "postHead" >Posts by {this.props.name}</h2>
+                                {  this.props.posts.map(Post)} : 
 
-                    </div>) : ''
+                        </div>
+                    ) : ''
                }
             </div>
         )
